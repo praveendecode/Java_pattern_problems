@@ -1,0 +1,35 @@
+package javalearn;
+
+import java.util.Scanner;
+
+public class D {
+
+	public static void main(String[] args) {
+
+		int n;
+		Scanner j = new Scanner(System.in);
+		System.out.print("enter the input for range:");
+		
+		n=j.nextInt();
+
+
+		for (int i =0;i<n-1;i++) {
+			for (int k =0;k<i;k++) {
+				
+			     System.out.print("*");
+			}
+			
+			System.out.print("\n");
+		}
+
+		for (int i =0;i<n;i++) {
+			for (int k =i;k<n;k++) {
+				
+			     System.out.print("*");
+			}
+			
+			System.out.print("\n");
+		}
+	}
+
+}
